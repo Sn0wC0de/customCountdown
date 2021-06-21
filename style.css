@@ -18,9 +18,9 @@ body {
 /* Video Background*/
 .video-background {
   position: fixed;
-
   bottom: 0;
-  height:100vh; 
+  height:100vh;
+  
  
   /* width: 100vw; */
 
@@ -33,6 +33,7 @@ video {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  
 }
 
 .video-overlay {
@@ -47,10 +48,11 @@ video {
 
 /* Container */
 .container {
+  position: relative;
   min-width: 580px;
   min-height: 304px;
   color: black;
-  margin: 0 auto;
+  margin: 0 0 0 40%  ;
   padding: 25px 50px;
   border-radius: 5px;
   z-index: 2;
@@ -164,7 +166,7 @@ li span {
 }
 
 /* Media Query: Large Smartphone (Vertical) */
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 800px) {
   .video-background {
     height: 100vh;
     width: 100vw;
